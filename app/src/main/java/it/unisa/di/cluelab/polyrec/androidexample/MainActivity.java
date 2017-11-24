@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Recognizer recognizer = new PolyRecognizerGSS(true);
+        final Recognizer recognizer = new PolyRecognizerGSS();
         addSamples(recognizer);
 
         final TextView message = (TextView) findViewById(R.id.message);
